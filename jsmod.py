@@ -39,7 +39,8 @@ class JSImportHook:
 				module.__package__ = pkg
 				module.__loader__ = self
 
-				contents = open(os.path.join(folder, '%s.js' % name)).read()
+				with open(os.path.join(folder, '%s.js' % name)) as f:
+					contents = f.read()
 
 				self.eval_module(module, contents)
 
