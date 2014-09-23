@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
 	name='jsmod',
 	version='0.0.1',
-	description='',
+	description='Import JavaScript modules directly from Python code',
 	url='https://github.com/sciyoshi/jsmod/',
 	author='Samuel Cormier-Iijima',
 	author_email='sciyoshi@gmail.com',
